@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'quicksandlight';
+    src: url('../font/quicksand-light-webfont.woff2') format('woff2'),
+         url('../font/quicksand-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* Animating the Akatsuki cloud */
+#cloud{
+    overflow: hidden;
+}
+#cloud img{
+    pointer-events: none;
+    user-select: none;
+    height: 100px;
+    position: relative;
+    left: 0;
+    animation: akamotion 60s linear 0s infinite normal forwards running;
+    /* animation-play-state: running; */
+}
+
+@keyframes akamotion {
+    0% {left: -200px;}
+    100% {left: 200Vw;}
+}
+
+/* Main Body */
+.welcome-zone{
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 200px;
+    margin-right: 50px;
+}
+.welcome-zone img{
+    height: 300px;
+    float: left;
+}
+.welc-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome-zone h1{
+    font-size: 60px;
+    margin: 0;
+    color: white;
+    margin-top: 10px;
+    font-family:  'quicksandlight', 'Courier New', Courier, monospace;
+}
+.welcome-zone p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(254, 255, 211);
+    width: 50%;
+    text-align: center;
+    /* box-shadow: 1px 1px 5px 1px; */
+}
+
+/* Paypayl zone */
+#donate{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid white 2px;
+    border-radius: 2px;
+    width: 120px;
+    height: 40px;
+    padding: 8px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+}
+#donate img{
+    position: relative;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+#donate img:hover{
+    animation: paypal .2s linear 0s 2 alternate both running;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes paypal {
+    0% {left: 2px}
+    100% {left: -2px;}
+    /* 0% {left: 0;} */
+}
+
+#donate a.donate-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+#donate:hover{
+    background-color: rgba(0, 86, 156, 0.137);
+    transition: 1s ease-out;
+}

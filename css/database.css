@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
+    background-image: url("../imgs/720172.jpg");
+    /* background-position: center; */
+    background-position-x: 0;
+    /* background-position-y: 0; */
+    background-size: auto;
+}
+
+.welcome-text{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+/* Animate Cube left */
+.box-h1-left{
+    position: relative;
+}
+.box-h1-left img{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -40px;
+    height: 40px;
+    width: 40px;
+    /* background-color: rgba(255, 235, 235, 0.432); */
+    animation: squaremotionL 1s ease-in-out 0.2s infinite alternate forwards running;
+}
+@keyframes squaremotionL{
+    0% {left: -40px; transform: rotate(0deg);}
+    100% {left: -100px; transform: rotate(360deg);}
+}
+/* Animated Cube right */
+.box-h1-right{
+    position: relative;
+}
+.box-h1-right img{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 2px;
+    height: 40px;
+    width: 40px;
+    animation: squaremotionR 1s ease-in-out 0.2s infinite alternate forwards running;
+}
+
+@keyframes squaremotionR{ 
+    0% {left: 2px; transform: rotate(0deg);}
+    100% {left: 62px; transform: rotate(360deg);}
+}
+
+/* Anime & Mangas tables */
+.data{
+    display: flex;
+    justify-content: space-around;
+    width: 100Vw;
+}
+.database-content{
+    width: 300px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.171);
+    border: solid 1px aliceblue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 1s;
+}
+.database-content:hover{
+    background-color: rgba(0, 0, 0, 0.445);
+}
+.database-content h2{
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-size: 40px;
+    margin: 0px 0 10px 0;
+    background-color: black;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.database-content a{
+    color: yellow;
+}
+.database-content .data-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data-link a
+{
+    margin-bottom: 10px;
+    color: rgb(71, 255, 209);
+    font-size: 18px;
+}
+.data-link a:hover{
+    transform: scale(1.3);
+    transition: ease-in .1s;
+    color: rgb(255, 255, 163);
+}
+
+.clickCircl{
+    width: 100px;
+    height: 100px;
+    border: 50%;
+    background: linear-gradient(to top, #000, #fff);
+    position: absolute;
+    z-index: 1000;
+    transform: scale(0);
+    transform-origin: center;
+    animation: animateClick 1s ease-out;
+}
+@keyframes animateClick {
+    0% {transform: scale(0)};
+    50% {transform: scale(2)};
+    0% {transform: scale(0); opacity: 0;}
+}

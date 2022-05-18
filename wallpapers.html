@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/siconsite.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/wallpaper.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/medqueries.css">
+    <title>WEeB | Gallery Slider</title>
+</head>
+<body>
+    
+    <nav>
+        <img src="imgs/logo.png" alt="Weeb Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="otaquiz.html">POLL</a></li>
+            <li><a href="database.html">Database</a></li> <!-- Where to read scans and watch animes -->
+            <li><a href="#" id="about_link">About Me</a></li>
+        </ul>
+    </nav>
+
+    <audio src="scripts/Tokyo_Ghoul_Unravel(Lofi).mp3" id="music"></audio>
+
+    <div class="music-player">
+        <img id="play-music" src="imgs/play-nbutton.svg" title="Clic to pause/stop the music" alt="Play/Stop music">
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 12</div>
+            <img src="imgs/slides/1241631.jpg" style="width: 100%" alt="">
+            <div class="text">Dark Forest</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="imgs/slides/2075597.jpg" style="width: 100%" alt="">
+            <div class="text">Japanese Spring</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 12</div>
+            <img src="imgs/slides/2249568.jpg" style="width: 100%" alt="">
+            <div class="text">Heavenly Clouds</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 12</div>
+            <img src="imgs/slides/2332646.jpg" style="width: 100%" alt="">
+            <div class="text">Nebula</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 12</div>
+            <img src="imgs/slides/2332796.jpg" style="width: 100%" alt="">
+            <div class="text">Your Name (Movie)</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 12</div>
+            <img src="imgs/slides/homebg.jpg" style="width: 100%" alt="">
+            <div class="text">Otaku</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 12</div>
+            <img src="imgs/slides/2399587.jpg" style="width: 100%" alt="">
+            <div class="text">Steam Town</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 12</div>
+            <img src="imgs/slides/2411419.jpg" style="width: 100%" alt="">
+            <div class="text">Tobi | Obito</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 12</div>
+            <img src="imgs/slides/2399568.jpg" style="width: 100%" alt="">
+            <div class="text">Dark Character</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 12</div>
+            <img src="imgs/slides/2332747.jpg" style="width: 100%" alt="">
+            <div class="text">Beautiful Sea</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 12</div>
+            <img src="imgs/slides/87241.jpg" style="width: 100%" alt="">
+            <div class="text">After rain countryside</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 12</div>
+            <img src="imgs/slides/527672.jpg" style="width: 100%" alt="">
+            <div class="text">Blue Void</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;></a>
+        <a class="next" onclick="plusSlides(1)">&#10095;></a>
+
+    </div>
+    <br>
+
+    <div class="textdiv" style="text-align: center;">
+        <span class="dot" onclick="currentSlides(1)"></span>
+        <span class="dot" onclick="currentSlides(2)"></span>
+        <span class="dot" onclick="currentSlides(3)"></span>
+        <span class="dot" onclick="currentSlides(4)"></span>
+        <span class="dot" onclick="currentSlides(5)"></span>
+        <span class="dot" onclick="currentSlides(6)"></span>
+        <span class="dot" onclick="currentSlides(7)"></span>
+        <span class="dot" onclick="currentSlides(8)"></span>
+        <span class="dot" onclick="currentSlides(9)"></span>
+        <span class="dot" onclick="currentSlides(10)"></span>
+        <span class="dot" onclick="currentSlides(11)"></span>
+        <span class="dot" onclick="currentSlides(12)"></span>
+    </div>
+
+    <div id="about-me-body">
+        <div class="about-container" id="about_container">
+            <div class="about">
+                <h1>ABOUT ME</h1>
+                <p>Hi
+                    I'w Wilfried, a first year high-schooler from ESP, in Dakar (Senegal)
+                    I'm passionated by mangas, animes, but also by coding.
+                    This website has entirely been designed by me and I do hope you'll enjoy it and someday give a try to that culture of ours, us weebs/otakus. 
+                    <br>Have a nice day (UwU)
+                </p>
+                <button id="close">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/aboutme.js"></script>
+    <script src="scripts/wallpaper.js"></script>
+</body>
+</html>
